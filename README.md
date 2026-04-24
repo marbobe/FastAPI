@@ -10,9 +10,9 @@
 
 2.  windows: `venv\Scripts\activate` Mac/Linux: `source venv/bin/activate`, activar el entorno.
 
-3.  `pip install fastapi uvicorn`, instalar FastAPI y el servidor ASGI(Asynchronous Server Getaway Interface) (uvicorn). Instalar las librerias. También se pueden instalar ambos a la vez con `pip install "fastapi[standard]"`. ASGI es asíncrono frente al WSGI tradicional que es síncrono (gestiona los accesos con una cola), asgi al ser asíncrono da acceso a todos los ususarios simultaneamente sin colas.
+3.  `pip install fastapi uvicorn`, instalar FastAPI y el servidor ASGI(Asynchronous Server Getaway Interface) (uvicorn). Instalar las librerias. También se pueden instalar ambos a la vez con `pip install "fastapi[standard]"`. ASGI es asíncrono frente al WSGI tradicional que es síncrono (gestiona los accesos con una cola), asgi al ser asíncrono da acceso a todos los ususarios simultaneamente sin colas. Dependencias opcionales para instalar: `pip install pydantic-settings python-dotenv`
 
-4.  `pip freeze > requirements.txt`, Guardar las dependencias, en el archivo requirements.txt, guardas el estado. De esta forma se puede tener el mismo entorno haciendo: `pip install -r requirements.txt`
+4.  `pip freeze > requirements.txt`, Guardar las dependencias, en el archivo requirements.txt, guardas el estado. De esta forma se puede tener el mismo entorno haciendo: `pip install -r requirements.txt`, si se usa pyproject se pude usar `pip install .`
 
 5.  crear archivo `app/main.py`
 
