@@ -1,5 +1,9 @@
 # FastAPI
 
+## Prerequisitos
+
+1. tener instalado python y virtualenv `pip install virtualenv`
+
 ## Iniciar proyecto con python/fastAPI
 
 1.  ` python -m venv venv` , Crea un entorno virtual, una copia aislada del ecosistema Python para el proyecto. Si no se hace todas las librerias se instalan globalmente.
